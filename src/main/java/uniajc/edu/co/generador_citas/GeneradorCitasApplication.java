@@ -11,8 +11,6 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,12 +20,12 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 
 @SpringBootApplication
-@EnableCircuitBreaker
+//@EnableCircuitBreaker
 @EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class, })
 @Configuration
 @EnableAsync
-@EnableEurekaClient
-@EnableZuulProxy
+//@EnableEurekaClient
+//@EnableZuulProxy
 @RefreshScope
 @EnableDiscoveryClient
 @ServletComponentScan

@@ -1,0 +1,45 @@
+
+server:
+  port: 8006
+    
+spring:
+  application:
+    name: generador_citas
+  jpa:
+    show-sql: false
+    format-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    
+     
+ribbon:
+  readTimeout: 20000
+  connectTimeout: 20000
+ 
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        enabled: false
+      execution:
+        timeout:
+          enabled: false
+        isolation:
+          thread:
+            interruptOnTimeout: false
+            timeoutInMilliseconds: 40000
+  
+security:
+  ignored: /health**,/info**,/metrics**,/trace**
+  
+basedatos:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/loscincodeaca
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 921130
+    type: com.zaxxer.hikari.HikariDataSource
+    connection-test-query: SELECT 1 
+    pool-name: pool-hikari-palomino
+    maximum-pool-size: 30
+    connection-timeout: 30000
+  

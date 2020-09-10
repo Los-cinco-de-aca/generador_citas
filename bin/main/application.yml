@@ -10,12 +10,6 @@ spring:
     format-sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:1111/eureka}
-  instance:
-    preferIpAddress: true
      
 ribbon:
   readTimeout: 20000
