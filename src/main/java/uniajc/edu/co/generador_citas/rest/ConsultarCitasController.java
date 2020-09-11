@@ -12,6 +12,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
 import uniajc.edu.co.generador_citas.response.ConsultarCitasResponse;
+import uniajc.edu.co.generador_citas.response.GeneralResponse;
 import uniajc.edu.co.generador_citas.services.IConsultarCitasServices;
 
 @RestController
@@ -23,16 +24,16 @@ public class ConsultarCitasController {
 	
 	
 	@RequestMapping(value = "/consultaCitas", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<?> consultarRaspa() {
+	public ResponseEntity<?> consultarCitas() {
 
 		Gson gson = new Gson();
 
 		ConsultarCitasResponse response = consultarCitasServices.consultarCitas();
 
-		ConsultarCitasResponse resp = new ConsultarCitasResponse();
-		resp.setMensaje(gson.toJson(response.getMensaje()));
+		GeneralResponse resp = new GeneralResponse();
+		resp.setMensaje(gson.toJson(response));
 
-		return new ResponseEntity<ConsultarCitasResponse>(resp, HttpStatus.OK);
+		return new ResponseEntity<GeneralResponse>(resp, HttpStatus.OK);
 	}
 	
 	

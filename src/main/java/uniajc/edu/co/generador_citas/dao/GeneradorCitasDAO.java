@@ -1,6 +1,8 @@
 package uniajc.edu.co.generador_citas.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import uniajc.edu.co.generador_citas.conexion.ObtenerConexion;
 import uniajc.edu.co.generador_citas.response.ConsultarCitasResponse;
@@ -11,6 +13,8 @@ import java.sql.SQLException;
 
 import javax.persistence.NoResultException;
 
+@Repository
+@Transactional
 public class GeneradorCitasDAO implements IGeneradorCitasDAO{
 	
 	@Autowired
@@ -26,7 +30,7 @@ public class GeneradorCitasDAO implements IGeneradorCitasDAO{
 
 		try {
 			
-			String sql = "SELECT ID, NOMBRE FROM loscincodeaca.citas";
+			String sql = "SELECT id, nombre FROM loscincodeaca.citas";
 			
 			conexion = obtenerConexion.obtenerConexion();
 			ps = conexion.prepareStatement(sql);
