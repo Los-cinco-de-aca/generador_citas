@@ -11,21 +11,21 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import uniajc.edu.co.generador_citas.app.ws.pojos.Especialidad;
-import uniajc.edu.co.generador_citas.app.ws.service.EspecialidadService;
+import uniajc.edu.co.generador_citas.app.ws.pojos.Role;
+import uniajc.edu.co.generador_citas.app.ws.service.RoleService;
 
 @CrossOrigin(origins="http://localhost:3000")//Servidor REACT
 @EnableAutoConfiguration
 @RestController
-@RequestMapping(value = "especialidadws")
-public class EspecialidadController {
+@RequestMapping(value = "rolews")
+public class RoleController {
 
 	@Autowired
-	EspecialidadService service;
+	RoleService service;
 	
 	@GetMapping(value= "list")
-	public ResponseEntity<List<Especialidad>> getEspecialidad(){
-		List<Especialidad> especialidad = service.findAll();
-		return new ResponseEntity<List<Especialidad>>(especialidad,HttpStatus.OK);
+	public ResponseEntity<List<Role>> getEspecialidad(){
+		List<Role> roles = service.findAll();
+		return new ResponseEntity<List<Role>>(roles,HttpStatus.OK);
 	}
 }

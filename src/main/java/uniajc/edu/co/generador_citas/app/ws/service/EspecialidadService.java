@@ -6,7 +6,7 @@ import uniajc.edu.co.generador_citas.app.ws.pojos.Especialidad;
 
 public interface EspecialidadService {
 
-	List<Especialidad> listEspecialidad();
+	List<Especialidad> findAll();
 	
 	Especialidad create(Especialidad especialidad);
 	

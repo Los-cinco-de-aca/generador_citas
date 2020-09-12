@@ -6,7 +6,7 @@ import uniajc.edu.co.generador_citas.app.ws.pojos.Usuario;
 
 public interface UserService {
 
-	List<Usuario> listUser();
+	List<Usuario> findAll();
 	
 	Usuario createUser(Usuario usuario);
 	

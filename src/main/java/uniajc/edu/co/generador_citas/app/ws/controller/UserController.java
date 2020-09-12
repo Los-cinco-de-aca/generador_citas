@@ -22,7 +22,7 @@ import uniajc.edu.co.generador_citas.app.ws.service.UserService;
 @CrossOrigin(origins="http://localhost:3000")
 @EnableAutoConfiguration
 @RestController
-@RequestMapping(value = "usersws")
+@RequestMapping(value = "usuariows")
 public class UserController {
 
 	Logger log = Logger.getLogger(UserController.class.getName());
@@ -33,7 +33,7 @@ public class UserController {
 	@GetMapping(value = "list")
 	public ResponseEntity<List<Usuario>> getUsers() {
 		log.info("LIST");
-		List<Usuario> usuarios = userService.listUser();
+		List<Usuario> usuarios = userService.findAll();
 		return new ResponseEntity<List<Usuario>>(usuarios, HttpStatus.OK);
 	}
 

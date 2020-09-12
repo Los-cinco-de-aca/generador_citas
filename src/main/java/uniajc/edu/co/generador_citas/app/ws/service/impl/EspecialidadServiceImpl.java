@@ -16,7 +16,7 @@ public class EspecialidadServiceImpl implements EspecialidadService {
 	EspecialidadRepository repository;
 	
 	@Override
-	public List<Especialidad> listEspecialidad() {
+	public List<Especialidad> findAll() {
 		// TODO Auto-generated method stub
 		return repository.findAll();
 	}
