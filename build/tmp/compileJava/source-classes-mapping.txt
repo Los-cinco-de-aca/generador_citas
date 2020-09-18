@@ -1,2 +1,40 @@
+uniajc/edu/co/generador_citas/app/ws/usuario/repository/UserRepository.java
+ uniajc.edu.co.generador_citas.app.ws.usuario.repository.UserRepository
+uniajc/edu/co/generador_citas/app/ws/usuario/service/RoleService.java
+ uniajc.edu.co.generador_citas.app.ws.usuario.service.RoleService
+uniajc/edu/co/generador_citas/app/ws/citas/repository/CitasRepository.java
+ uniajc.edu.co.generador_citas.app.ws.citas.repository.CitasRepository
+uniajc/edu/co/generador_citas/app/ws/usuario/repository/RoleRepository.java
+ uniajc.edu.co.generador_citas.app.ws.usuario.repository.RoleRepository
+uniajc/edu/co/generador_citas/app/ws/pojos/Especialidad.java
+ uniajc.edu.co.generador_citas.app.ws.pojos.Especialidad
+uniajc/edu/co/generador_citas/app/ws/usuario/service/UserService.java
+ uniajc.edu.co.generador_citas.app.ws.usuario.service.UserService
+uniajc/edu/co/generador_citas/app/ws/usuario/service/EspecialidadService.java
+ uniajc.edu.co.generador_citas.app.ws.usuario.service.EspecialidadService
+uniajc/edu/co/generador_citas/app/ws/citas/service/CitasServices.java
+ uniajc.edu.co.generador_citas.app.ws.citas.service.CitasServices
+uniajc/edu/co/generador_citas/app/ws/usuario/controller/RoleController.java
+ uniajc.edu.co.generador_citas.app.ws.usuario.controller.RoleController
+uniajc/edu/co/generador_citas/app/ws/usuario/service/impl/UserServiceImpl.java
+ uniajc.edu.co.generador_citas.app.ws.usuario.service.impl.UserServiceImpl
+uniajc/edu/co/generador_citas/app/ws/usuario/service/impl/RoleServiceImpl.java
+ uniajc.edu.co.generador_citas.app.ws.usuario.service.impl.RoleServiceImpl
+uniajc/edu/co/generador_citas/app/ws/citas/controller/CitasController.java
+ uniajc.edu.co.generador_citas.app.ws.citas.controller.CitasController
+uniajc/edu/co/generador_citas/app/ws/usuario/controller/EspecialidadController.java
+ uniajc.edu.co.generador_citas.app.ws.usuario.controller.EspecialidadController
+uniajc/edu/co/generador_citas/app/ws/pojos/Role.java
+ uniajc.edu.co.generador_citas.app.ws.pojos.Role
 uniajc/edu/co/generador_citas/GeneradorCitasApplication.java
  uniajc.edu.co.generador_citas.GeneradorCitasApplication
+uniajc/edu/co/generador_citas/app/ws/usuario/controller/UserController.java
+ uniajc.edu.co.generador_citas.app.ws.usuario.controller.UserController
+uniajc/edu/co/generador_citas/app/ws/citas/service/impl/CitasServicesImpl.java
+ uniajc.edu.co.generador_citas.app.ws.citas.service.impl.CitasServicesImpl
+uniajc/edu/co/generador_citas/app/ws/usuario/service/impl/EspecialidadServiceImpl.java
+ uniajc.edu.co.generador_citas.app.ws.usuario.service.impl.EspecialidadServiceImpl
+uniajc/edu/co/generador_citas/app/ws/pojos/Usuario.java
+ uniajc.edu.co.generador_citas.app.ws.pojos.Usuario
+uniajc/edu/co/generador_citas/app/ws/usuario/repository/EspecialidadRepository.java
+ uniajc.edu.co.generador_citas.app.ws.usuario.repository.EspecialidadRepository
