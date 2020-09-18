@@ -3,11 +3,13 @@ package uniajc.edu.co.generador_citas.app.ws.citas.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import uniajc.edu.co.generador_citas.app.ws.citas.repository.CitaRepository;
 import uniajc.edu.co.generador_citas.app.ws.citas.service.CitasServices;
 import uniajc.edu.co.generador_citas.app.ws.pojos.Cita;
 
+@Service
 public class CitasServicesImpl implements CitasServices{
 	
 	@Autowired
