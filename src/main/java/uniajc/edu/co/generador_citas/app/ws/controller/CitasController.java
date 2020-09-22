@@ -38,7 +38,7 @@ public class CitasController {
 		
 		Cita crearCita = citasServices.create(cita);
 		
-		return new ResponseEntity<Cita> (crearCita, HttpStatus.OK);
+		return new ResponseEntity<> (crearCita, HttpStatus.OK);
 	}
 
 	@PutMapping(value="citas")
@@ -46,7 +46,7 @@ public class CitasController {
 		
 		Cita actualizarCita = citasServices.update(cita);
 		
-		return new ResponseEntity<Cita> (actualizarCita, HttpStatus.OK);
+		return new ResponseEntity<> (actualizarCita, HttpStatus.OK);
 	}	
 	
 	@DeleteMapping(value="citas")
@@ -54,6 +54,6 @@ public class CitasController {
 		
         citasServices.delete(cita);
 		
-		return new ResponseEntity<String> ("Eliminado", HttpStatus.OK);
+		return new ResponseEntity<> ("Eliminado", HttpStatus.OK);
 	}	
 }

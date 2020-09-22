@@ -17,25 +17,24 @@ public class CitasServicesImpl implements CitasServices{
 
 	@Override
 	public List<Cita> findAll() {
-		// TODO Auto-generated method stub
+
 		return citaRepository.findAll();
 	}
 
 	@Override
 	public Cita create(Cita cita) {
-		// TODO Auto-generated method stub
+
 		return citaRepository.save(cita);
 	}
 
 	@Override
 	public Cita update(Cita cita) {
-		// TODO Auto-generated method stub
 		return citaRepository.save(cita);
 	}
 
 	@Override
 	public void delete(Cita cita) {
-		// TODO Auto-generated method stub
+
 		citaRepository.delete(cita);
 	}
 

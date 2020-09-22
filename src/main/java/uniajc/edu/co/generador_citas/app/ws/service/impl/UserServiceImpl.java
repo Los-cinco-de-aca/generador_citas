@@ -25,20 +25,16 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public Usuario createUser(Usuario usuario) {
-		// TODO Auto-generated method stub
 		 return userRepository.save(usuario);
 	}
 
 	@Override
 	public Usuario updateUser(Usuario usuario) {
-		// TODO Auto-generated method stub
-		//userRepository.findById(user.getUserId());
 		return userRepository.save(usuario);
 	}
 
 	@Override
 	public void deleteUser(Usuario usuario) {
-		// TODO Auto-generated method stub
 		userRepository.delete(usuario);
 	}
 

@@ -17,19 +17,16 @@ public class EspecialidadServiceImpl implements EspecialidadService {
 	
 	@Override
 	public List<Especialidad> findAll() {
-		// TODO Auto-generated method stub
 		return repository.findAll();
 	}
 
 	@Override
 	public Especialidad create(Especialidad especialidad) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Especialidad update(Especialidad especialidad) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

@@ -17,25 +17,21 @@ public class RoleServiceImpl implements RoleService {
 	
 	@Override
 	public List<Role> findAll() {
-		// TODO Auto-generated method stub
 		return repository.findAll();
 	}
 
 	@Override
 	public Role create(Role role) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Role update(Role role) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public void delete(Role role) {
-		// TODO Auto-generated method stub
 
 	}
 

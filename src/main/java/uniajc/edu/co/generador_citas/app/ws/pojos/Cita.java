@@ -29,19 +29,18 @@ public class Cita implements Serializable{
 	private Date fechaInicio;
 	private Date fechaFinal;
 	private String fkEstado;
-	private String ReferenciaHistoriaCita;
+	private String referenciaHistoriaCita;
 	
 	
-	public Cita(Integer idCita, String fkPaciente, String fkMedico, String fkIps, Date fechaInicio, Date fechaFinal,
-			String fkEstado, String referenciaHistoriaCita) {
-		this.idCita = idCita;
-		this.fkPaciente = fkPaciente;
-		this.fkMedico = fkMedico;
-		this.fkIps = fkIps;
-		this.fechaInicio = fechaInicio;
-		this.fechaFinal = fechaFinal;
-		this.fkEstado = fkEstado;
-		ReferenciaHistoriaCita = referenciaHistoriaCita;
+	public Cita(Cita cita) {
+		this.idCita = cita.idCita;
+		this.fkPaciente = cita.fkPaciente;
+		this.fkMedico = cita.fkMedico;
+		this.fkIps = cita.fkIps;
+		this.fechaInicio = cita.fechaInicio;
+		this.fechaFinal = cita.fechaFinal;
+		this.fkEstado = cita.fkEstado;
+		this.referenciaHistoriaCita = cita.referenciaHistoriaCita;
 		
 	}
 
@@ -121,23 +120,21 @@ public class Cita implements Serializable{
 		this.fkEstado = fkEstado;
 	}
 
+	
 	@Column(name="auto_refer_hitoria_cita")
 	public String getReferenciaHistoriaCita() {
-		return ReferenciaHistoriaCita;
+		return referenciaHistoriaCita;
 	}
-
 
 	public void setReferenciaHistoriaCita(String referenciaHistoriaCita) {
-		ReferenciaHistoriaCita = referenciaHistoriaCita;
-		
+		this.referenciaHistoriaCita = referenciaHistoriaCita;
 	}
-
 
 	@Override
 	public String toString() {
 		return "Cita [idCita=" + idCita + ", fkPaciente=" + fkPaciente + ", fkMedico=" + fkMedico + ", fkIps=" + fkIps
 				+ ", fechaInicio=" + fechaInicio + ", fechaFinal=" + fechaFinal + ", fkEstado=" + fkEstado
-				+ ", ReferenciahistoriaCita=" + ReferenciaHistoriaCita + "]";
+				+ ", ReferenciahistoriaCita=" + referenciaHistoriaCita + "]";
 	}
 
 
