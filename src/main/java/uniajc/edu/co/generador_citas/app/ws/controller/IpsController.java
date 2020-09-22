@@ -17,7 +17,7 @@ import uniajc.edu.co.generador_citas.app.ws.pojos.Ips;
 import uniajc.edu.co.generador_citas.app.ws.service.IpsServices;
 
 @RestController
-@RequestMapping(value="apis")
+@RequestMapping(value="apis1")
 public class IpsController {
 	
 	@Autowired
