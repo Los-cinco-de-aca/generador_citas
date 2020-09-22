@@ -32,8 +32,7 @@ public class EspecialidadServiceImpl implements EspecialidadService {
 
 	@Override
 	public void delete(Especialidad especialidad) {
-		// TODO Auto-generated method stub
-		
+		// Do nothing		
 	}
 
 }
