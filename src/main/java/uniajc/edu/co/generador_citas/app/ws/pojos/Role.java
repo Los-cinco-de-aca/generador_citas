@@ -28,15 +28,21 @@ public class Role implements Serializable {
 	private String descripcion;
 	
 	
-	static final Especialidad fkEspecialidad = null;
+	public Especialidad fkEspecialidad ;
 	
 	
-
 	@ManyToOne
 	@JoinColumn(name="fk_especialidad")
-	public static Especialidad getFkespecialidad() {
+	public Especialidad getFkEspecialidad() {
 		return fkEspecialidad;
 	}
+
+
+	public void setFkEspecialidad(Especialidad fkEspecialidad) {
+		this.fkEspecialidad = fkEspecialidad;
+	}
+
+
 
 
 	public Role(Integer roleId, String descripcion) {
