@@ -30,7 +30,7 @@ public class EstadoController {
 		
 		List<Estado> listEstado = estadoServices.findAll();
 		
-		return new ResponseEntity<List<Estado>>(listEstado, HttpStatus.OK);
+		return new ResponseEntity<>(listEstado, HttpStatus.OK);
 	}
 	
 	@PostMapping(value="estado")
@@ -38,7 +38,7 @@ public class EstadoController {
 		
 		Estado crearEstado = estadoServices.create(estado);
 		
-		return new ResponseEntity<Estado> (crearEstado, HttpStatus.OK);
+		return new ResponseEntity<> (crearEstado, HttpStatus.OK);
 	}
 
 	@PutMapping(value="estado")
@@ -46,7 +46,7 @@ public class EstadoController {
 		
 		Estado actualizarEstado = estadoServices.update(estado);
 		
-		return new ResponseEntity<Estado> (actualizarEstado, HttpStatus.OK);
+		return new ResponseEntity<> (actualizarEstado, HttpStatus.OK);
 	}	
 	
 	@DeleteMapping(value="estado")
@@ -54,7 +54,7 @@ public class EstadoController {
 		
 		estadoServices.delete(estado);
 		
-		return new ResponseEntity<String> ("Eliminado", HttpStatus.OK);
+		return new ResponseEntity<> ("Eliminado", HttpStatus.OK);
 	}	
 
 }

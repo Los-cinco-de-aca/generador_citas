@@ -28,7 +28,7 @@ public class IpsController {
 		
 		List<Ips> listIps = ipsServices.findAll();
 		
-		return new ResponseEntity<List<Ips>>(listIps, HttpStatus.OK);
+		return new ResponseEntity<>(listIps, HttpStatus.OK);
 	}
 	
 	@PostMapping(value="ips")
@@ -36,7 +36,7 @@ public class IpsController {
 		
 		Ips crearIps = ipsServices.create(ips);
 		
-		return new ResponseEntity<Ips> (crearIps, HttpStatus.OK);
+		return new ResponseEntity<> (crearIps, HttpStatus.OK);
 	}
 
 	@PutMapping(value="ips")
@@ -44,7 +44,7 @@ public class IpsController {
 		
 		Ips actualizarIps = ipsServices.update(ips);
 		
-		return new ResponseEntity<Ips> (actualizarIps, HttpStatus.OK);
+		return new ResponseEntity<> (actualizarIps, HttpStatus.OK);
 	}	
 	
 	@DeleteMapping(value="ips")
@@ -52,7 +52,7 @@ public class IpsController {
 		
 		ipsServices.delete(ips);
 		
-		return new ResponseEntity<String> ("Eliminado", HttpStatus.OK);
+		return new ResponseEntity<> ("Eliminado", HttpStatus.OK);
 	}	
 
 }

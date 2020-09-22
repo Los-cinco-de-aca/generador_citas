@@ -26,6 +26,6 @@ public class EspecialidadController {
 	@GetMapping(value= "list")
 	public ResponseEntity<List<Especialidad>> getEspecialidad(){
 		List<Especialidad> especialidad = service.findAll();
-		return new ResponseEntity<List<Especialidad>>(especialidad,HttpStatus.OK);
+		return new ResponseEntity<>(especialidad,HttpStatus.OK);
 	}
 }

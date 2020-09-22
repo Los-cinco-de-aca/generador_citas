@@ -26,6 +26,6 @@ public class RoleController {
 	@GetMapping(value= "list")
 	public ResponseEntity<List<Role>> getEspecialidad(){
 		List<Role> roles = service.findAll();
-		return new ResponseEntity<List<Role>>(roles,HttpStatus.OK);
+		return new ResponseEntity<>(roles,HttpStatus.OK);
 	}
 }

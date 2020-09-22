@@ -30,7 +30,7 @@ public class CitasController {
 		
 		List<Cita> listCita = citasServices.findAll();
 		
-		return new ResponseEntity<List<Cita>>(listCita, HttpStatus.OK);
+		return new ResponseEntity<>(listCita, HttpStatus.OK);
 	}
 	
 	@PostMapping(value="citas")

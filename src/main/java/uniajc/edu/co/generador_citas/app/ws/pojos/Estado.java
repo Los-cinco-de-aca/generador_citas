@@ -20,12 +20,12 @@ public class Estado implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Integer idEstado;
-	private String estado;
+	private String nombreEstado;
 
 	public Estado(Integer idEstado, String estado) {
 		super();
 		this.idEstado = idEstado;
-		this.estado = estado;
+		this.nombreEstado = estado;
 	}
 
 	@Id
@@ -38,19 +38,20 @@ public class Estado implements Serializable {
 	public void setIdEstado(Integer idEstado) {
 		this.idEstado = idEstado;
 	}
-
+	
+	
 	@Column(name = "estado")
-	public String getEstado() {
-		return estado;
+	public String getNombreEstado() {
+		return nombreEstado;
 	}
 
-	public void setEstado(String estado) {
-		this.estado = estado;
+	public void setNombreEstado(String nombreEstado) {
+		this.nombreEstado = nombreEstado;
 	}
 	
 	@Override
 	public String toString() {
-		return "Estado [idEstado=" + idEstado + ", estado=" + estado + "]";
+		return "Estado [idEstado=" + idEstado + ", estado=" + nombreEstado + "]";
 	}
 
 }

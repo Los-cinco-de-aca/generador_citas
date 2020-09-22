@@ -30,7 +30,7 @@ public class EpsController {
 		
 		List<Eps> listEps = epsServices.findAll();
 		
-		return new ResponseEntity<List<Eps>>(listEps, HttpStatus.OK);
+		return new ResponseEntity<>(listEps, HttpStatus.OK);
 	}
 	
 	@PostMapping(value="eps")
@@ -38,7 +38,7 @@ public class EpsController {
 		
 		Eps crearEps = epsServices.create(eps);
 		
-		return new ResponseEntity<Eps> (crearEps, HttpStatus.OK);
+		return new ResponseEntity<> (crearEps, HttpStatus.OK);
 	}
 
 	@PutMapping(value="eps")
@@ -46,7 +46,7 @@ public class EpsController {
 		
 		Eps actualizarEps = epsServices.update(eps);
 		
-		return new ResponseEntity<Eps> (actualizarEps, HttpStatus.OK);
+		return new ResponseEntity<> (actualizarEps, HttpStatus.OK);
 	}	
 	
 	@DeleteMapping(value="eps")
@@ -54,7 +54,7 @@ public class EpsController {
 		
 		epsServices.delete(eps);
 		
-		return new ResponseEntity<String> ("Eliminado", HttpStatus.OK);
+		return new ResponseEntity<> ("Eliminado", HttpStatus.OK);
 	}	
 
 }

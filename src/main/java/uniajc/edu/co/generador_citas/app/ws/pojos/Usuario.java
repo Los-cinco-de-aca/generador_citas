@@ -32,18 +32,17 @@ public class Usuario implements Serializable{
 	private String email;
 	private String contrasena;
 	
-	public Usuario(Integer idUsuario, String documento, String nombre, String apellido, String genero,
-			Date fechaNacimiento, String telefono, String direccion, String email, String contrasena) {
-		this.idUsuario = idUsuario;
-		this.documento = documento;
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.genero = genero;
-		this.fechaNacimiento = fechaNacimiento;
-		this.telefono = telefono;
-		this.direccion = direccion;
-		this.email = email;
-		this.contrasena = contrasena;
+	public Usuario(Usuario usuario) {
+		this.idUsuario = usuario.idUsuario;
+		this.documento = usuario.documento;
+		this.nombre = usuario.nombre;
+		this.apellido = usuario.apellido;
+		this.genero = usuario.genero;
+		this.fechaNacimiento = usuario.fechaNacimiento;
+		this.telefono = usuario.telefono;
+		this.direccion = usuario.direccion;
+		this.email = usuario.email;
+		this.contrasena = usuario.contrasena;
 	}
 	
 	@Id

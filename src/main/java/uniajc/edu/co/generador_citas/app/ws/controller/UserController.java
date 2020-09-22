@@ -34,7 +34,7 @@ public class UserController {
 	public ResponseEntity<List<Usuario>> getUsers() {
 		log.info("LIST");
 		List<Usuario> usuarios = userService.findAll();
-		return new ResponseEntity<List<Usuario>>(usuarios, HttpStatus.OK);
+		return new ResponseEntity<>(usuarios, HttpStatus.OK);
 	}
 
 	@PostMapping(value = "create")
@@ -42,9 +42,9 @@ public class UserController {
 		log.info("CREATE");
 		Usuario userReturn = userService.createUser(usuario);
 		if (userReturn != null) {
-			return new ResponseEntity<Usuario>(userReturn, HttpStatus.OK);
+			return new ResponseEntity<>(userReturn, HttpStatus.OK);
 		} else {
-			return new ResponseEntity<Usuario>(userReturn, HttpStatus.NO_CONTENT);
+			return new ResponseEntity<>(userReturn, HttpStatus.NO_CONTENT);
 		}
 	}
 
@@ -53,9 +53,9 @@ public class UserController {
 		log.info("UPDATE");
 		Usuario userReturn = userService.updateUser(usuario);
 		if (userReturn != null) {
-			return new ResponseEntity<Usuario>(userReturn, HttpStatus.OK);
+			return new ResponseEntity<>(userReturn, HttpStatus.OK);
 		} else {
-			return new ResponseEntity<Usuario>(userReturn, HttpStatus.NO_CONTENT);
+			return new ResponseEntity<>(userReturn, HttpStatus.NO_CONTENT);
 		}
 	}
 
