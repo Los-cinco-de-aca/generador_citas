@@ -22,10 +22,6 @@ public class Estado implements Serializable {
 	private Integer idEstado;
 	private String estado;
 
-	public Estado() {
-		// Do nothing
-	}
-
 	public Estado(Integer idEstado, String estado) {
 		super();
 		this.idEstado = idEstado;

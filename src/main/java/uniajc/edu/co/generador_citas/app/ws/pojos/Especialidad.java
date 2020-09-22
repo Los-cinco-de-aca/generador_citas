@@ -41,10 +41,6 @@ public class Especialidad implements Serializable {
 	public void setListRoles(List<Role> listRoles) {
 		this.listRoles = listRoles;
 	}
-
-	public Especialidad(){
-		
-	}
 	
 	public Especialidad(Integer especialidadId, String descripcion) {
 		this.especialidadId = especialidadId;

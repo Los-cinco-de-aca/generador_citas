@@ -40,10 +40,6 @@ public class Role implements Serializable {
 	public void setFkEspecialidad(Especialidad fkEspecialidad) {
 		this.fkEspecialidad = fkEspecialidad;
 	}
-
-	public Role(){
-		
-	}
 	
 	public Role(Integer roleId, String descripcion) {
 		this.roleId = roleId;

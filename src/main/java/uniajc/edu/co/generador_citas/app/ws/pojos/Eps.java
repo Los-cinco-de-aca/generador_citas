@@ -22,10 +22,6 @@ public class Eps implements Serializable {
 	private Integer idEps;
 	private String nombreEps;
 
-	public Eps() {
-		// Do nothing
-	}
-
 	public Eps(Integer idEps, String nombreEps) {
 		super();
 		this.idEps = idEps;

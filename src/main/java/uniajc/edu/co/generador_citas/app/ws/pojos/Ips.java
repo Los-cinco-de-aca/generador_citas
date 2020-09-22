@@ -21,9 +21,6 @@ public class Ips implements Serializable {
 	private Integer idIps;
 	private String centroMedico;
 
-	public Ips() {
-		// Do nothing
-	}
 
 	public Ips(Integer idIps, String centroMedico) {
 		super();

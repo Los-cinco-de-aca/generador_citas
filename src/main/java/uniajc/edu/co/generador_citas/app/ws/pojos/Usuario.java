@@ -32,10 +32,6 @@ public class Usuario implements Serializable{
 	private String email;
 	private String contrasena;
 	
-	public Usuario(){
-		
-	}
-	
 	public Usuario(Integer idUsuario, String documento, String nombre, String apellido, String genero,
 			Date fechaNacimiento, String telefono, String direccion, String email, String contrasena) {
 		this.idUsuario = idUsuario;
