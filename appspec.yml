@@ -1,5 +1,6 @@
 version: 0.0
 os: linux
+<<<<<<< HEAD
 files:
   - source: cdk-manual-test-spring-boot-0.1.jar
     destination: /var/cdk-app/
@@ -19,3 +20,25 @@ hooks:
     - location: start_server.sh
       timeout: 300
       runas: root
+=======
+
+files:
+  - source: /
+    destination: /home/ec2-user/server
+
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
+
+hooks:
+  ApplicationStop:
+    - location: scripts/server_stop.sh
+      timeout: 20
+      runas: ec2-user
+  ApplicationStart:
+    - location: scripts/server_start.sh
+      timeout: 20
+      runas: ec2-user
+>>>>>>> 0d8685e4e5afe29a387d6728ab0aa6886b155074
