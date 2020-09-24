@@ -31,6 +31,9 @@ public class Cita implements Serializable{
 	private String fkEstado;
 	private String referenciaHistoriaCita;
 	
+	public Cita(){
+		
+	}
 	
 	public Cita(Cita cita) {
 		this.idCita = cita.idCita;

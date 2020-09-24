@@ -32,6 +32,10 @@ public class Usuario implements Serializable{
 	private String email;
 	private String contrasena;
 	
+	public Usuario(){
+		
+	}
+	
 	public Usuario(Usuario usuario) {
 		this.idUsuario = usuario.idUsuario;
 		this.documento = usuario.documento;

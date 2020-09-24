@@ -42,6 +42,8 @@ public class Especialidad implements Serializable {
 		this.listRoles = listRoles;
 	}
 	
+	public Especialidad(){}
+	
 	public Especialidad(Integer especialidadId, String descripcion) {
 		this.especialidadId = especialidadId;
 		this.descripcion = descripcion;

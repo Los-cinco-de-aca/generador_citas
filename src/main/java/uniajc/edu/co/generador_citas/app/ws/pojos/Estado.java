@@ -22,6 +22,8 @@ public class Estado implements Serializable {
 	private Integer idEstado;
 	private String nombreEstado;
 
+	public Estado(){}
+	
 	public Estado(Integer idEstado, String estado) {
 		super();
 		this.idEstado = idEstado;
