@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class GeneradorCitasApplication {
+	
 
 	public static void main(String[] args) {
 		SpringApplication.run(GeneradorCitasApplication.class, args);

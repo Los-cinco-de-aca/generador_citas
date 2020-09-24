@@ -1,2 +1,0 @@
-uniajc/edu/co/generador_citas/GeneradorCitasApplicationTests.java
- uniajc.edu.co.generador_citas.GeneradorCitasApplicationTests
