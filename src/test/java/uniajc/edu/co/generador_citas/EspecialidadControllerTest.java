@@ -29,7 +29,7 @@ class EspecialidadControllerTest {
 	String url = "http://localhost:";
 	
 	@Test
-	public void testGetCitas() throws URISyntaxException {
+	public void testGetEspecialidad() throws URISyntaxException {
 		RestTemplate restTemplate = new RestTemplate();
 		final String baseUrl = url + randomServerPort + "/especialidadws/list";
 		URI uri = new URI(baseUrl);

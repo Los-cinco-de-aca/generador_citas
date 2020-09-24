@@ -18,6 +18,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
 
+import uniajc.edu.co.generador_citas.app.ws.pojos.Estado;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
  class EstadoControllerTest {
@@ -28,7 +30,7 @@ import org.springframework.web.client.RestTemplate;
 	String url = "http://localhost:";
 	
 	@Test
-	public void testGetCitas() throws URISyntaxException {
+	public void testGetEstado() throws URISyntaxException {
 		RestTemplate restTemplate = new RestTemplate();
 		final String baseUrl = url + randomServerPort + "/api/estado";
 		URI uri = new URI(baseUrl);
@@ -39,5 +41,54 @@ import org.springframework.web.client.RestTemplate;
 		ResponseEntity<String> result = restTemplate.exchange(uri,HttpMethod.GET,request,String.class);
 	    assertEquals(200, result.getStatusCodeValue());
 	}
+	
+	
+	@Test
+	public void testPostEstado() throws URISyntaxException {
+		RestTemplate restTemplate = new RestTemplate();
+		final String baseUrl = url + randomServerPort + "/api/estado";
+		URI uri = new URI(baseUrl);
+		HttpHeaders headers = new HttpHeaders();
+		headers.setContentType(MediaType.APPLICATION_JSON);
+		headers.add("Authorization","Bearer " +"7f2658b5-51f2-4b34-b4b8-a256d35d570f");
+		Estado estado = new Estado();
+		estado.setIdEstado(5);
+		estado.setNombreEstado("Prueba");
+		HttpEntity<Estado> request = new HttpEntity<>(estado,headers);
+		ResponseEntity<String> result = restTemplate.exchange(uri,HttpMethod.POST,request,String.class);
+	    assertEquals(200, result.getStatusCodeValue());
+	}
+	
+	@Test
+	public void testPutEstado() throws URISyntaxException {
+		RestTemplate restTemplate = new RestTemplate();
+		final String baseUrl = url + randomServerPort + "/api/estado";
+		URI uri = new URI(baseUrl);
+		HttpHeaders headers = new HttpHeaders();
+		headers.setContentType(MediaType.APPLICATION_JSON);
+		headers.add("Authorization","Bearer " +"7f2658b5-51f2-4b34-b4b8-a256d35d570f");
+		Estado estado = new Estado();
+		estado.setIdEstado(5);
+		estado.setNombreEstado("Prueba");
+		HttpEntity<Estado> request = new HttpEntity<>(estado,headers);
+		ResponseEntity<String> result = restTemplate.exchange(uri,HttpMethod.PUT,request,String.class);
+	    assertEquals(200, result.getStatusCodeValue());
+	}
+	
 
+	@Test
+	public void testDeleteEstado() throws URISyntaxException {
+		RestTemplate restTemplate = new RestTemplate();
+		final String baseUrl = url + randomServerPort + "/api/estado";
+		URI uri = new URI(baseUrl);
+		HttpHeaders headers = new HttpHeaders();
+		headers.setContentType(MediaType.APPLICATION_JSON);
+		headers.add("Authorization","Bearer " +"7f2658b5-51f2-4b34-b4b8-a256d35d570f");
+		Estado estado = new Estado();
+		estado.setIdEstado(5);
+		estado.setNombreEstado("Prueba");
+		HttpEntity<Estado> request = new HttpEntity<>(estado,headers);
+		ResponseEntity<String> result = restTemplate.exchange(uri,HttpMethod.DELETE,request,String.class);
+	    assertEquals(200, result.getStatusCodeValue());
+	}
 }

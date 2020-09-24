@@ -41,6 +41,5 @@ import org.springframework.web.client.RestTemplate;
 		ResponseEntity<String> result = restTemplate.exchange(uri,HttpMethod.GET,request,String.class);
 	    assertEquals(200, result.getStatusCodeValue());
 	}
-
-
+	
 }

@@ -28,7 +28,7 @@ import org.springframework.web.client.RestTemplate;
 	String url = "http://localhost:";
 	
 	@Test
-	public void testGetCitas() throws URISyntaxException {
+	public void testGetRol() throws URISyntaxException {
 		RestTemplate restTemplate = new RestTemplate();
 		final String baseUrl = url + randomServerPort + "/rolews/list";
 		URI uri = new URI(baseUrl);
@@ -39,4 +39,5 @@ import org.springframework.web.client.RestTemplate;
 		ResponseEntity<String> result = restTemplate.exchange(uri,HttpMethod.GET,request,String.class);
 	    assertEquals(200, result.getStatusCodeValue());
 	}
+	
 }
